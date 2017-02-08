@@ -2,14 +2,11 @@
 
 @section('title', 'Profile')
 @section('content')
+
 <h1> {{ $name }} </h1>
 
 <form action="/products" method="POST">
    {{ csrf_field() }}
-
-
-
-
    <div class="form-group">
      <label for="commenter">Commenter</label>
      <input type="text" name="commenter" value="" class="form-control">
@@ -22,6 +19,6 @@
      <label for="votes"></label>
      <input type="text" name="votes" value="" class="form-control">
    </div>
-  <input type="submit" value="Submit" class="btn btn-success">
+   <button type="submit" name="button" class="btn btn-success">Submit</button>
 </form>
 @endsection
